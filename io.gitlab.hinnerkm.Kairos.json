@@ -3,9 +3,6 @@
     "runtime" : "org.gnome.Platform",
     "runtime-version" : "50",
     "sdk" : "org.gnome.Sdk",
-    "sdk-extensions" : [
-        "org.freedesktop.Sdk.Extension.vala"
-    ],
     "command" : "kairos",
     "finish-args" : [
         "--share=network",
@@ -18,10 +15,6 @@
         "--talk-name=org.gnome.evolution.dataserver.Subprocess.Backend.*"
 
     ],
-    "build-options" : {
-        "append-path" : "/usr/lib/sdk/vala/bin",
-        "prepend-ld-library-path" : "/usr/lib/sdk/vala/lib"
-    },
     "cleanup" : [
         "/include",
         "/lib/pkgconfig",
@@ -39,25 +32,12 @@
     ],
     "modules" : [
         {
-            "name": "blueprint-compiler",
-            "buildsystem": "meson",
-            "cleanup": ["*"],
-            "sources": [
-                {
-                  "type": "git",
-                  "url": "https://gitlab.gnome.org/GNOME/blueprint-compiler",
-                  "tag": "v0.18.0"
-                }
-            ]
-        },
-        {
             "name" : "libical",
             "cleanup" : [
                 "/lib/cmake"
             ],
             "buildsystem" : "cmake-ninja",
             "config-opts" : [
-                "-DCMAKE_INSTALL_LIBDIR:PATH=/app/lib",
                 "-DBUILD_SHARED_LIBS=On",
                 "-DICAL_BUILD_DOCS=False",
                 "-DICAL_BUILD_TESTING=false",
@@ -76,7 +56,7 @@
                   "url": "https://github.com/libical/libical.git",
                   "tag": "v3.0.20"
                 }
-               ]
+            ]
         },
         {
             "name": "evolution-data-server",
