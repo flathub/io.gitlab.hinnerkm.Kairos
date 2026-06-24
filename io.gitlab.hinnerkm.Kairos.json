@@ -93,7 +93,7 @@
             "sources" : [
                 {
                     "type" : "git",
-                    "url" : "https://gitlab.com/hinnerkm/kairos",
+                    "url" : "https://gitlab.com/hinnerkm/Kairos",
                     "tag" : "0.2.0"
                 }
             ]
