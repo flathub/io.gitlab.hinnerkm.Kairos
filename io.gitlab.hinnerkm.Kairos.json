@@ -54,7 +54,8 @@
                 {
                   "type": "git",
                   "url": "https://github.com/libical/libical.git",
-                  "tag": "v3.0.20"
+                  "tag": "v3.0.20",
+                  "commit": "57ce34025066935f356fd539e6deb7a7a9952618"
                 }
             ]
         },
@@ -82,7 +83,8 @@
                 {
                     "type": "git",
                     "url": "https://gitlab.gnome.org/GNOME/evolution-data-server.git",
-                    "tag": "3.58.0"
+                    "tag": "3.58.0",
+                    "commit": "aed3962e7d0914f4c5c04c6b6445cab1d935492e"
                 }
             ]
         },
@@ -94,7 +96,8 @@
                 {
                     "type" : "git",
                     "url" : "https://gitlab.com/hinnerkm/Kairos",
-                    "tag" : "0.2.0"
+                    "tag" : "0.2.0",
+                    "commit" : "64a1bd6914d8ba8b635cfbafdf0833743c701e9c"
                 }
             ]
         }
