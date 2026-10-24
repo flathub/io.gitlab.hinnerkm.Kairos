@@ -1,19 +1,19 @@
 {
     "id" : "io.gitlab.hinnerkm.Kairos",
     "runtime" : "org.gnome.Platform",
-    "runtime-version" : "50",
+    "runtime-version" : "51",
     "sdk" : "org.gnome.Sdk",
     "command" : "kairos",
     "finish-args" : [
-        "--share=network",
         "--share=ipc",
         "--socket=fallback-x11",
         "--device=dri",
         "--socket=wayland",
-        "--talk-name=org.gnome.evolution.dataserver.Calendar8",
+        "--talk-name=org.gnome.OnlineAccounts",
         "--talk-name=org.gnome.evolution.dataserver.Sources5",
+        "--talk-name=org.gnome.evolution.dataserver.Calendar8",
+        "--talk-name=org.gnome.evolution.dataserver.AddressBook10",
         "--talk-name=org.gnome.evolution.dataserver.Subprocess.Backend.*"
-
     ],
     "cleanup" : [
         "/include",
@@ -83,8 +83,8 @@
                 {
                     "type": "git",
                     "url": "https://gitlab.gnome.org/GNOME/evolution-data-server.git",
-                    "tag": "3.58.0",
-                    "commit": "aed3962e7d0914f4c5c04c6b6445cab1d935492e"
+                    "tag": "3.60.2",
+                    "commit": "c63344d7f4891503c108eda5faf50621ccb2602d"
                 }
             ]
         },
@@ -96,8 +96,8 @@
                 {
                     "type" : "git",
                     "url" : "https://gitlab.com/hinnerkm/Kairos",
-                    "tag" : "0.8.0",
-                    "commit" : "ed0563c3ee08ed165abdf49ceb240e20874010e2"
+                    "tag" : "0.8.1",
+                    "commit" : "768344a60ac62a060140343e188ac69c88fdb583"
                 }
             ]
         }
