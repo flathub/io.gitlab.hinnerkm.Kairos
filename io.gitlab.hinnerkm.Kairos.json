@@ -95,8 +95,8 @@
                 {
                     "type" : "git",
                     "url" : "https://gitlab.com/hinnerkm/Kairos",
-                    "tag" : "0.9.0",
-                    "commit" : "94387e2a2a0fca9517faf7bd9418abb077935efd"
+                    "tag" : "0.9.1",
+                    "commit" : "f2eceaba9c829819e89407f4841b964f2df3aaea"
                 }
             ]
         }
